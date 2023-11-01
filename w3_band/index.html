@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Band</title>
     <link
       rel="icon"
       href="./assets/img/27b9bfe050e94eacd0fd06acd7c8a88a.jpg"
@@ -77,7 +77,7 @@
 
           <!-- List of member  -->
           <div class="row member-list">
-            <div class="col col-third s-col-full mt-32 text-center">
+            <div class="member-item col col-third s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -85,7 +85,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-third s-col-full mt-32 text-center">
+            <div class="member-item col col-third s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -93,7 +93,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-third s-col-full mt-32 text-center">
+            <div class="member-item col col-third s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -351,8 +351,8 @@
 
         menuItem.onclick = function () {
           var isParentMenu =
-            menuItem.nextElementSibling &&
-            menuItem.nextElementSibling.classList.contains("subnav");
+            this.nextElementSibling &&
+            this.nextElementSibling.classList.contains("subnav");
           if (isParentMenu) {
             event.preventDefault();
           } else {
