@@ -208,8 +208,7 @@ html {
 #slider {
   margin-top: 46px;
   padding-top: 50%;
-  background: url("/w3_band/assets/img/chicago.jpg") no-repeat top center /
-    cover;
+  background: url("../img/chicago.jpg") no-repeat top center / cover;
   position: relative;
 }
 
